@@ -1,0 +1,31 @@
+body {
+    display: grid;
+    background-image: url("images/wall3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.wp_selector {
+    place-self: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.wp_selector p {
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wall1 {background-image: url(images/wall1.jpg); background-size: cover;}
+.wall2 {background-image: url(images/wall2.jpg); background-size: cover;}
+.wall3 {background-image: url(images/wall3.jpg); background-size: cover;}
+.wall4 {background-image: url(images/wall4.jpg); background-size: cover;}
+.wall5 {background-image: url(images/wall5.jpg); background-size: cover;}
+.wall6 {background-image: url(images/wall6.jpg); background-size: cover;}
