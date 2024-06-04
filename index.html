@@ -14,8 +14,13 @@
 
     
     <body>
-        <div class="wp_selector">
-            <p>Theme</p>
+        <div class="navBar">
+            <button onclick="showThemes()" id="showThemes" class="showButton">Themes</button>
+            <button onclick="startPomo()" id="startPomo" class="showButton">Pomo</button>
+            <button onclick="showMedia()" id="showMedia" class="showButton">Media</button>
+        </div>
+        <div class="hidden wp_selector" id="themeTab">
+            <p id="themeTitle">Theme</p>
             <button onclick="changeWallpaper(this.id)" id="wall1" class="wall1"></button>
             <button onclick="changeWallpaper(this.id)" id="wall2" class="wall2"></button>
             <button onclick="changeWallpaper(this.id)" id="wall3" class="wall3"></button>

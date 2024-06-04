@@ -18,3 +18,14 @@ function changeWallpaper(id) {
         document.body.style.backgroundImage = "url(images/wall6.jpg)";
     }
 }
+
+
+function showThemes() {
+    var themeTab = document.getElementById("themeTab");
+    var currentClass = themeTab.getAttribute('class');
+    if (currentClass === 'visible') {
+        themeTab.setAttribute('class', 'hidden');
+    } else {
+        themeTab.setAttribute('class', 'visible');
+    }
+}
