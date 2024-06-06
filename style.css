@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 body {
     display: grid;
     background-image: url("images/avatar/wall3.jpg");
@@ -6,11 +9,30 @@ body {
 }
 
 button {
-    width: 50px;
-    height: 50px;
+    margin-top: 15px;
+    background-color: Transparent;
+    width: 35px;
+    height: 35px;
     border-style: none;
     border-radius: 5px;
 }
+
+button:hover { 
+    cursor: pointer;
+    transition: 0.5s;
+    width: 40px;
+    height: 40px;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #c0c0c0;
+    font-size: 12.5px;
+}
+
+.themeNav {background-image: url("images/icons/theme.png"); background-size: cover;}
+.pomoNav {background-image: url("images/icons/alarm.png"); background-size: cover;}
+.mediaNav {background-image: url("images/icons/music.png"); background-size: cover;}
 
 .hidden {
     display: none;
@@ -43,6 +65,12 @@ button {
 .wall10 {background-image: url(images/dinoking/wall10.jpg); background-size: cover;}
 .wall11 {background-image: url(images/dinoking/wall11.jpg); background-size: cover;}
 
+.navItem {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 35px 32px;
+}
+
 .navBar {
     place-self: center;
     bottom: 0;
@@ -51,6 +79,35 @@ button {
     justify-content: center;
     align-items: center;
     gap: 25px;
-    width: 20vw;
-    height: 5vw;
+    width: 12vw;
+    height: 3.1vw;
+    margin-bottom: 0.75vw;
+
+    background-color: #1d1d1db4;
+    border-radius: 10px;
+}
+
+.mediaOpen {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 30px 30px 30px 30px;
+    width: 150px;
+    height: 250px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+}
+
+.mediaOpen p {
+    color: white;
+    font-family: "Ubuntu Sans Mono", monospace;
+}
+
+.mediaOpen a {
+    text-decoration: none;
+}
+
+.mediaTitle {
+    color: #fff !important;
+    font-weight: 700;
 }

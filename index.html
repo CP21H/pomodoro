@@ -15,9 +15,19 @@
     
     <body>
         <div class="navBar">
-            <button onclick="showThemes()" id="showThemes" class="showButton">Themes</button>
-            <button onclick="startPomo()" id="startPomo" class="showButton">Pomo</button>
-            <button onclick="showMedia()" id="showMedia" class="showButton">Media</button>
+            <div class="navItem">
+                <button onclick="showThemes()" id="showThemes" class="themeNav"></button>
+                <h4>Theme</h4>
+            </div>
+            
+            <div class="navItem">
+                <button onclick="startPomo()" id="startPomo" class="pomoNav"></button>
+                <h4>Pomo</h4>
+            </div>
+            <div class="navItem">
+                <button onclick="showMedia()" id="showMedia" class="mediaNav"></button>
+                <h4>Media</h4>
+            </div>
         </div>
         <div class="hidden wp_selector" id="themeTab">
             <p id="themeTitle">Avatar</p>
@@ -37,7 +47,12 @@
             <button onclick="changeWallpaper(this.id)" id="wall11" class="wall11"></button>
         </div>
         <div class="hidden media" id="mediaTab">
-            <p id="mediaTitle">Media</p>
+            <div class="mediaOpen">
+                <p class="mediaTitle">> Media <</p>
+                <a href="https://youtube.com/playlist?list=PLMy3gheZ1t7d7nFenAGmcV-M_D9w5B6RQ&si=QJJ2izpW2Rgr3x1J"><p>Study Music</p></a>
+                <a href="https://youtube.com/playlist?list=PLMy3gheZ1t7eVHLpiAq-7aZwxnoVk1hdt&si=wOV7xi2WZmTJjUWF"><p>Hogwarts Study</p></a>
+                <a href="https://youtube.com/playlist?list=PLMy3gheZ1t7d65W8LmFV4Il2bteHlCHhv&si=IqFCzq0k8zeu0Onw"><p>Pokejams</p></a>
+            </div>
         </div>
     </body>
     
