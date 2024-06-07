@@ -9,7 +9,6 @@ body {
 }
 
 button {
-    margin-top: 15px;
     background-color: Transparent;
     width: 35px;
     height: 35px;
@@ -19,7 +18,7 @@ button {
 
 button:hover { 
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.35s;
     width: 40px;
     height: 40px;
 }
@@ -30,10 +29,6 @@ h4 {
     font-size: 12.5px;
 }
 
-.themeNav {background-image: url("images/icons/theme.png"); background-size: cover;}
-.pomoNav {background-image: url("images/icons/alarm.png"); background-size: cover;}
-.mediaNav {background-image: url("images/icons/music.png"); background-size: cover;}
-
 .hidden {
     display: none;
 }
@@ -42,34 +37,57 @@ h4 {
 }
 
 .wp_selector {
-    place-self: center;
-    position: fixed;
-    bottom: 0;
+    background-color: #1d1d1db4;
+    border-radius: 10px;
 }
 
-.wp_selector p {
+.themeTitle {
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
+    margin-left: 15px;
 }
 
-.wall1 {background-image: url(images/avatar/wall1.jpg); background-size: cover;}
+.wall1 {background-image: url(images/avatar/wall1.jpg); background-size: cover; margin-left: 15px;}
 .wall2 {background-image: url(images/avatar/wall2.jpg); background-size: cover;}
 .wall3 {background-image: url(images/avatar/wall3.jpg); background-size: cover;}
 .wall4 {background-image: url(images/avatar/wall4.jpg); background-size: cover;}
 .wall5 {background-image: url(images/avatar/wall5.jpg); background-size: cover;}
 .wall6 {background-image: url(images/avatar/wall6.jpg); background-size: cover;}
 
-.wall7 {background-image: url(images/dinoking/wall7.jpg); background-size: cover;}
+.wall7 {background-image: url(images/dinoking/wall7.jpg); background-size: cover; margin-left: 15px;}
 .wall8 {background-image: url(images/dinoking/wall8.jpg); background-size: cover;}
 .wall9 {background-image: url(images/dinoking/wall9.jpg); background-size: cover;}
 .wall10 {background-image: url(images/dinoking/wall10.jpg); background-size: cover;}
 .wall11 {background-image: url(images/dinoking/wall11.jpg); background-size: cover;}
 
+.wall12 {background-image: url(images/hogwarts/wall12.jpg); background-size: cover; margin-left: 15px;}
+.wall13 {background-image: url(images/hogwarts/wall13.png); background-size: cover;}
+.wall14 {background-image: url(images/hogwarts/wall14.jpg); background-size: cover;}
+.wall15 {background-image: url(images/hogwarts/wall15.png); background-size: cover;}
+.wall16 {background-image: url(images/hogwarts/wall16.jpg); background-size: cover;}
+
+
+/*
+* // NAV-BAR 
+*/
 .navItem {
     display: grid;
     place-items: center;
-    grid-template-rows: 35px 32px;
+    
 }
+
+.navItem h4 {
+    margin-top: 3vw;
+}
+
+.themeNav, .mediaNav, .pomoNav {
+    position: absolute;
+    margin-bottom: 1.5vw;
+    margin-top: 15px;
+}
+.themeNav {background-image: url("images/icons/theme.png"); background-size: cover;}
+.pomoNav {background-image: url("images/icons/alarm.png"); background-size: cover;}
+.mediaNav {background-image: url("images/icons/music.png"); background-size: cover;}
 
 .navBar {
     place-self: center;
@@ -90,11 +108,12 @@ h4 {
 .mediaOpen {
     display: grid;
     place-items: center;
-    grid-template-rows: 30px 30px 30px 30px;
+    grid-template-rows: 30px 30px 30px 30px 30px;
     width: 150px;
     height: 250px;
     border-style: solid;
     border-color: white;
+    background-color: #1d1d1db4;
     border-radius: 15px;
 }
 

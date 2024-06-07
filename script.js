@@ -35,6 +35,23 @@ function changeWallpaper(id) {
     if (id == "wall11") {
         document.body.style.backgroundImage = "url(images/dinoking/wall11.jpg)";
     }
+
+    // HOGWARTS
+    if (id == "wall12") {
+        document.body.style.backgroundImage = "url(images/hogwarts/wall12.jpg)";
+    }
+    if (id == "wall13") {
+        document.body.style.backgroundImage = "url(images/hogwarts/wall13.png)";
+    }
+    if (id == "wall14") {
+        document.body.style.backgroundImage = "url(images/hogwarts/wall14.jpg)";
+    }
+    if (id == "wall15") {
+        document.body.style.backgroundImage = "url(images/hogwarts/wall15.png)";
+    }
+    if (id == "wall16") {
+        document.body.style.backgroundImage = "url(images/hogwarts/wall16.jpg)";
+    }
 }
 
 
@@ -47,9 +64,16 @@ function showThemes() {
     
     var themeTab = document.getElementById("themeTab");
     var currentClass = themeTab.getAttribute('class');
+    
+    // STYLING
     themeTab.style.placeSelf = "center";
-    themeTab.style.position = "fixed";
-    themeTab.style.bottom = "10%";
+    themeTab.style.backgroundColor = "#1d1d1db4";
+    themeTab.style.borderRadius = "10px";
+    themeTab.style.width = "500px";
+    themeTab.style.height = "300px";
+    themeTab.style.borderStyle = "solid";
+    themeTab.style.borderColor = "white";
+    
     if (currentClass === 'visible') {
         themeTab.setAttribute('class', 'hidden');
     } else {
@@ -67,8 +91,6 @@ function showMedia() {
     var mediaTab = document.getElementById("mediaTab");
     var currentClass = mediaTab.getAttribute('class');
     mediaTab.style.placeSelf = "center";
-    mediaTab.style.position = "fixed";
-    mediaTab.style.bottom = "10%";
     if (currentClass === 'visible') {
         mediaTab.setAttribute('class', 'hidden');
     } else {
