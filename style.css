@@ -29,6 +29,29 @@ h4 {
     font-size: 12.5px;
 }
 
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 105rem;
+    height: 100px;
+    width: 13rem;
+}
+
+.clock {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    color: #fff;
+}
+
+.day {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+
 .hidden {
     display: none;
 }

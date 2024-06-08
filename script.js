@@ -97,3 +97,20 @@ function showMedia() {
         mediaTab.setAttribute('class', 'visible');
     }
 }
+
+// displayTime() referenced off SheCodes.com
+function displayTime() {
+    var currDate = new Date();
+    var hours = currDate.getHours();
+    var minutes = currDate.getMinutes();
+    var seconds = currDate.getSeconds();
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    var timeString = hours + ":" + minutes + ":" + seconds;
+    document.getElementById("clock").innerHTML = timeString;
+
+    var dayString = currDate.toDateString();
+    document.getElementById("day").innerHTML = dayString;
+}
+setInterval(displayTime, 1000);
