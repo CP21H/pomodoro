@@ -143,13 +143,49 @@ h4 {
 .mediaOpen p {
     color: white;
     font-family: "Ubuntu Sans Mono", monospace;
+    transition: 0.3s;
+}
+
+.mediaOpen p:hover {
+    color: #888888;
+    transition: 0.3s;
 }
 
 .mediaOpen a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .mediaTitle {
     color: #fff !important;
     font-weight: 700;
+}
+
+
+/* POMO TAB */
+.pomoContent {
+    display: grid;
+    place-items: center;
+    color: #fff;
+}
+
+.startPomo {
+    background-color: rgb(247, 199, 142);
+    width: 200px;
+    height: 40px;
+    border-style: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.startPomo:hover { 
+    color:#fff;
+    background-color: rgb(44, 44, 44);
+    border-style: solid;
+    border-color:rgb(247, 199, 142);
+    border-width: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 200px;
+    height: 40px;
 }

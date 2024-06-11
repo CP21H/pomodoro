@@ -61,6 +61,11 @@ function showThemes() {
     if (mediaClass === 'visible') {
         mediaTab.setAttribute('class', 'hidden');
     }
+    var pomoTab = document.getElementById("pomoTab");
+    var pomoClass = pomoTab.getAttribute('class');
+    if (pomoClass === 'visible') {
+        pomoTab.setAttribute('class', 'hidden');
+    }
     
     var themeTab = document.getElementById("themeTab");
     var currentClass = themeTab.getAttribute('class');
@@ -81,11 +86,48 @@ function showThemes() {
     }
 }
 
+function showPomo() {
+    var mediaTab = document.getElementById("mediaTab");
+    var mediaClass = mediaTab.getAttribute('class');
+    if (mediaClass === 'visible') {
+        mediaTab.setAttribute('class', 'hidden');
+    }
+    var themeTab = document.getElementById("themeTab");
+    var themeClass = themeTab.getAttribute('class');
+    if (themeClass === 'visible') {
+        themeTab.setAttribute('class', 'hidden');
+    }
+
+    var pomoTab = document.getElementById("pomoTab");
+    var currentClass = pomoTab.getAttribute('class');
+
+    // STYLING
+    pomoTab.style.placeSelf = "center";
+    pomoTab.style.backgroundColor = "#1d1d1db4";
+    pomoTab.style.borderRadius = "10px";
+    pomoTab.style.width = "350px";
+    pomoTab.style.height = "300px";
+    pomoTab.style.borderStyle = "solid";
+    pomoTab.style.borderColor = "white";
+    pomoTab.style.fontFamily = "Ubuntu Sans Mono";
+
+    if (currentClass === 'visible') {
+        pomoTab.setAttribute('class', 'hidden');
+    } else {
+        pomoTab.setAttribute('class', 'visible');
+    }
+}
+
 function showMedia() {
     var themeTab = document.getElementById("themeTab");
     var themeClass = themeTab.getAttribute('class');
     if (themeClass === 'visible') {
         themeTab.setAttribute('class', 'hidden');
+    }
+    var pomoTab = document.getElementById("pomoTab");
+    var pomoClass = pomoTab.getAttribute('class');
+    if (pomoClass === 'visible') {
+        pomoTab.setAttribute('class', 'hidden');
     }
 
     var mediaTab = document.getElementById("mediaTab");
