@@ -106,7 +106,7 @@ function showPomo() {
     pomoTab.style.backgroundColor = "#1d1d1db4";
     pomoTab.style.borderRadius = "10px";
     pomoTab.style.width = "350px";
-    pomoTab.style.height = "300px";
+    pomoTab.style.height = "400px";
     pomoTab.style.borderStyle = "solid";
     pomoTab.style.borderColor = "white";
     pomoTab.style.fontFamily = "Ubuntu Sans Mono";
@@ -156,3 +156,56 @@ function displayTime() {
     document.getElementById("day").innerHTML = dayString;
 }
 setInterval(displayTime, 1000);
+
+
+
+
+/* 
+*
+*   // POMODORO TIMER
+*   -- REFERENCED FROM CODEWITHSAHAND
+*/
+
+const startBTN = document.getElementById("start");
+const stopBTN = document.getElementById("stop");
+const resetBTN = document.getElementById("reset");
+const timerELEM = document.getElementById("timer");
+
+let interval;
+let timeLeft = 1500;
+
+function updateTimer() {
+    let minutes = Math.floor(timeLeft / 60);
+    let seconds = timeLeft % 60;
+    let formattedTime = `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+
+    timerELEM.innerHTML = formattedTime;
+}
+
+function startTimer() {
+    // we call a function (1st parameter), ever thousandth millisecond (every second)
+    interval = setInterval(()=> {
+        timeLeft--;
+        updateTimer();
+        if (timeLeft == 0) {
+            clearInterval(interval);
+            alert("Time's up!"); // switch out for sound notification
+            timeLeft = 1500;
+            updateTimer();
+        }
+    }, 1000)
+}
+
+function stopTimer() {
+    clearInterval(interval);
+}
+
+function resetTimer() {
+    clearInterval(interval);
+    timeLeft = 1500;
+    updateTimer();
+}
+
+startBTN.addEventListener("click", startTimer)
+stopBTN.addEventListener("click", stopTimer)
+resetBTN.addEventListener("click", resetTimer)
