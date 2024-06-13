@@ -170,6 +170,8 @@ const startBTN = document.getElementById("start");
 const stopBTN = document.getElementById("stop");
 const resetBTN = document.getElementById("reset");
 const timerELEM = document.getElementById("timer");
+const focusBTN = document.getElementById("focus");
+const breakBTN = document.getElementById("break");
 
 let interval;
 let timeLeft = 1500;
@@ -189,7 +191,7 @@ function startTimer() {
         updateTimer();
         if (timeLeft == 0) {
             clearInterval(interval);
-            alert("Time's up!"); // switch out for sound notification
+            document.getElementById('notif').play();
             timeLeft = 1500;
             updateTimer();
         }
@@ -206,6 +208,18 @@ function resetTimer() {
     updateTimer();
 }
 
+function setFocus() {
+    timeLeft = 1500;
+    updateTimer();
+}
+
+function setBreak() {
+    timeLeft = 300;
+    updateTimer();
+}
+
 startBTN.addEventListener("click", startTimer)
 stopBTN.addEventListener("click", stopTimer)
 resetBTN.addEventListener("click", resetTimer)
+focusBTN.addEventListener("click", setFocus)
+breakBTN.addEventListener("click", setBreak)
