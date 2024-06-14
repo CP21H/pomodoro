@@ -52,6 +52,23 @@ function changeWallpaper(id) {
     if (id == "wall16") {
         document.body.style.backgroundImage = "url(images/hogwarts/wall16.jpg)";
     }
+
+    // STAR WARS
+    if (id == "wall17") {
+        document.body.style.backgroundImage = "url(images/starwars/wall17.jpg)";
+    }
+    if (id == "wall18") {
+        document.body.style.backgroundImage = "url(images/starwars/wall18.jpg)";
+    }
+    if (id == "wall19") {
+        document.body.style.backgroundImage = "url(images/starwars/wall19.jpg)";
+    }
+    if (id == "wall20") {
+        document.body.style.backgroundImage = "url(images/starwars/wall20.jpg)";
+    }
+    if (id == "wall21") {
+        document.body.style.backgroundImage = "url(images/starwars/wall21.jpg)";
+    }
 }
 
 
@@ -78,6 +95,7 @@ function showThemes() {
     themeTab.style.height = "300px";
     themeTab.style.borderStyle = "solid";
     themeTab.style.borderColor = "white";
+    themeTab.style.overflowY = "scroll";
     
     if (currentClass === 'visible') {
         themeTab.setAttribute('class', 'hidden');
