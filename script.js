@@ -172,6 +172,7 @@ const resetBTN = document.getElementById("reset");
 const timerELEM = document.getElementById("timer");
 const focusBTN = document.getElementById("focus");
 const breakBTN = document.getElementById("break");
+const longBreakBTN = document.getElementById("longbreak");
 
 let interval;
 let timeLeft = 1500;
@@ -218,8 +219,14 @@ function setBreak() {
     updateTimer();
 }
 
+function setLongBreak() {
+    timeLeft = 900;
+    updateTimer();
+}
+
 startBTN.addEventListener("click", startTimer)
 stopBTN.addEventListener("click", stopTimer)
 resetBTN.addEventListener("click", resetTimer)
 focusBTN.addEventListener("click", setFocus)
 breakBTN.addEventListener("click", setBreak)
+longBreakBTN.addEventListener("click", setLongBreak)

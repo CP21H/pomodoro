@@ -231,11 +231,40 @@ h4 {
     background-color: rgba(148, 109, 109, 0.562);
     width: 50px;
     height: 25px;
+    transition: 0.3s;
+}
+
+.mode-long {
+    font-family: 'Courier New', Courier, monospace;;
+    color: #fff;
+    background-color: rgba(148, 109, 109, 0.562);
+    width: 50px;
+    height: 35px;
+    transition: 0.3s;
 }
 
 .mode:hover { 
     cursor: pointer;
     width: 50px;
     height: 25px;
+
+    color:rgb(119, 113, 113);
+    background-color: rgb(149, 187, 190);
+
+    border-width: 1px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+.mode-long:hover {
+    cursor: pointer;
+    width: 50px;
+    height: 35px;
+
+    color:rgb(119, 113, 113);
+    background-color: rgb(149, 187, 190);
+
+    border-width: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
