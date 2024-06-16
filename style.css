@@ -96,6 +96,13 @@ h4 {
 .wall20 {background-image: url(images/starwars/wall20.jpg); background-size: cover;}
 .wall21 {background-image: url(images/starwars/wall21.jpg); background-size: cover;}
 
+.wall22 {background-image: url(images/cozy/wall22.png); background-size: cover; margin-left: 15px;}
+.wall23 {background-image: url(images/cozy/wall23.png); background-size: cover;}
+.wall24 {background-image: url(images/cozy/wall24.png); background-size: cover;}
+.wall25 {background-image: url(images/cozy/wall25.png); background-size: cover;}
+.wall26 {background-image: url(images/cozy/wall26.png); background-size: cover;}
+.wall27 {background-image: url(images/cozy/wall27.jpg); background-size: cover;}
+
 ::-webkit-scrollbar {
     width: 10px;
 }

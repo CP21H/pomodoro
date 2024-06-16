@@ -69,6 +69,26 @@ function changeWallpaper(id) {
     if (id == "wall21") {
         document.body.style.backgroundImage = "url(images/starwars/wall21.jpg)";
     }
+
+    // COZY
+    if (id == "wall22") {
+        document.body.style.backgroundImage = "url(images/cozy/wall22.png)";
+    }
+    if (id == "wall23") {
+        document.body.style.backgroundImage = "url(images/cozy/wall23.png)";
+    }
+    if (id == "wall24") {
+        document.body.style.backgroundImage = "url(images/cozy/wall24.png)";
+    }
+    if (id == "wall25") {
+        document.body.style.backgroundImage = "url(images/cozy/wall25.png)";
+    }
+    if (id == "wall26") {
+        document.body.style.backgroundImage = "url(images/cozy/wall26.png)";
+    }
+    if (id == "wall27") {
+        document.body.style.backgroundImage = "url(images/cozy/wall27.jpg)";
+    }
 }
 
 
